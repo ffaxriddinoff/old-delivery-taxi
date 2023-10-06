@@ -1,0 +1,70 @@
+1 - Test -> [key_model.php] Modelni aniq oladi
+2 - Test -> [is_proper.php] Plastikdan to'lanadigan pul buyurtmanikiga tengligini tekshiradi
+
+5 - Test -> [paying.php]
+
+
+// Reversal payment
+{
+    "error_code": 0,
+    "error_note": "Платеж отменен"
+}
+
+{
+    "error_code": -18,
+    "error_note": "Данный платёж уже был отменен ранее"
+}
+
+// Check
+{
+    "error_code": 0,
+    "error_note": "Платеж аннулирован",
+    "payment_id": "1788862867",
+    "payment_status": -100
+}
+
+// PayByCard
+{
+    "error_code": -501,
+    "error_note": "Статус платежа неизвестен",
+    "payment_id": "1788935451",
+    "payment_status": null
+}
+
+{
+    "error_code": -5640,
+    "error_note": "Платёж уже существует и обрабатывается. Пожалуйста, подождите.",
+    "payment_id": "1788936139",
+    "payment_status": -5640
+}
+
+{
+    "error_code": 0,
+    "error_note": "Платёж уже существует и обрабатывается. Пожалуйста, подождите.",
+    "payment_id": "1788937820",
+    "payment_status": -5640
+}
+
+// after-pay Payment
+Faxriddin, [16 марта 2022 г., 11:45:57]:
+{"error_code":0,"error_note":"Успешно проведен","payment_id":"1788998857","payment_status":2}
+
+{
+    "id":26,
+    "payment_system":"click",
+    "system_transaction_id":"1644184110",
+    "amount":1000,
+    "currency_code":860,
+    "state":2,
+    "updated_time":"1647413076171",
+    "comment":"Success",
+    "transactionable_type":"App\\Models\\Order",
+    "transactionable_id":6,
+    "deleted_at":null,
+    "created_at":"2022-03-16T06:44:36.000000Z",
+    "updated_at":"2022-03-16T06:44:36.000000Z",
+    "detail":{
+        "create_time":1647413076171,
+        "system_time_datetime":"2022-03-16 11:44:31"
+    }
+}

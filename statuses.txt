@@ -1,0 +1,24 @@
+Order statuses:
+-2 - tolovda xatolik
+-1 - bekor qilindi
+0 - yangi buyurtma
+1 - qabul qilingan
+2 - tayyor bolgan
+3 - jonatilgan
+31 - yo'lda (merge order)
+4 - yetkazilgan
+
+TaxiOrder statuses:
+-1 - bekor qilingan
+0 - yangi buyurtma
+1 - driver qabul qildi (merge order)
+2 - tugatilgan (history)
+
+
+payment_type:
+    0 - Plastik
+    1 - Naqd
+
+order_type:
+    1 - TaxiOrder
+    2 - Order
